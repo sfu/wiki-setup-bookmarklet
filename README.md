@@ -3,6 +3,7 @@
 This bookmarklet simplifies setup of MediaWiki in SFU's environment. It autofills constant paramaters and prompts for a couple of variables (sitename and DB prefix) with suggested defaults.
 
 ## Installation
+0. Clone the repo somewhere (git clone git://github.com/sfu/wiki-setup-bookmarklet.git /tmp/wiki-setup-bookmarklet && cd /tmp/wiki-setup-bookmarklet)
 1. SysOp and DB passwords are not included in the source. Edit src.js and replace instances of "REPLACE\_ME" with the appropriate passwords.
 2. Change the default database if necessary.
 3. Run the build script (./build).
