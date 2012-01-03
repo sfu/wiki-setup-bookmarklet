@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if grep "!REPLACE_ME" src.js > /dev/null; then
+    echo "\nYou have not entered passwords for the SysOp and/or DB Users in src.js. Correct the file and try again.\n";
+    exit 1
+fi
+
+if ./jsmin < src.js > bookmarklet.js ; then
+   echo "\nBookmarklet has been created as bookmarklet.js.\n"
+fi
+
