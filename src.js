@@ -5,7 +5,7 @@
         alert('This script can only run from a wiki.sfu.ca config page.');
         return false;
     }
-    var path = location.pathname.replace('/config/', '').replace('index.php', '').substr(1).replace('/', '_');
+    var path = location.pathname.replace(/\/config.*$/, '').substr(1).replace('/', '_');
 
     var promptForValues = {
         Sitename: path,
